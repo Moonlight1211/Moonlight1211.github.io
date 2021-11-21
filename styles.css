@@ -1,0 +1,84 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bodyText {
+    color: black;
+    font-family:Helvetica, sans-serif;
+    padding:20px;
+    margin-top:30px;
+}
+
+
+/* navigation bar styling */
+.active {
+    background-color: rgb(151, 151, 151);
+}
+#navHeaderText {
+    float:right;
+    font-family:Helvetica, sans-serif;
+    display: block;
+    padding: 15px;
+    background-color: rgb(56, 56, 56);
+}
+#navList {
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(56, 56, 56);
+}
+li {
+    float: left;
+    border-right: 1px solid rgb(151, 151, 151);
+}
+li:last-child {
+    border-right: none;
+}
+li a {
+    font-family:Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 15px;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(94, 94, 94);
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(56, 56, 56);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999999999999;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: rgb(94, 94, 94);}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#navbarWebsiteText {
+    color:rgb(125, 0, 255);
+    font-family:Helvetica, sans-serif;
+}
+#navbarWebsiteText:hover {
+    background-color: rgb(125, 0, 255);
+    color: rgb(56, 56, 56);
+}
