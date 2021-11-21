@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>moonlight1211</title>
         <style>
-
-
-
-
+            .noselect {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            h1 {
+                font-family:Helvetica, sans-serif
+            }
         </style>
+        <script> 
+            //if you read the code to this site you are crazy and I hate you
+            const funnyText = [
+                "welcome to my website",
+                "welcome to my stupid shit ass website",
+                "welcome to my fucking dumbass shit website",
+                "welcome to my dumbfuck shit stupidass website",
+                "welcome to my shitty stupid dumbfuck website",
+                "welcome to my website. it is shit and fucking stupid",
+                "welcome to my website (fuck)",
+                "welcome my to website",
+                "welcome to the fucking website",
+                "welcome to my website of shit",
+                "welcome to shit",
+                "fuck",
+                "welcome to my very cool and awesome website",
+                "welsite to my webcome",
+                "welcome to my website for the insane",
+                "welcome to my website (i am crazy)",
+                "moonlight1211",
+            ]
+            function headerText(){
+                document.getElementById("header").textContent = funnyText[Math.floor(Math.random() * (17))]
+            }
+            function headerColor(){
+                document.getElementById("header").style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
+            }
+        </script>
     </head>
-    <body>
-        <h1>welcome to my stupid fucking dumbass website</h1>
+    <body onload="headerText(); headerColor()">
+        <h1 id="header" onclick="headerColor()" class="noselect"></h1>
     </body>
 </html>
