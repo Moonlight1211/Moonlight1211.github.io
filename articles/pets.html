@@ -3,7 +3,7 @@
     <head>
         <title>moonlight1211</title>
         <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
         <script> 
             //if you read the code to this site you are crazy and I hate you
             const funnyText = [
@@ -35,17 +35,20 @@
     </head>
     <body onload="randomText(); randomColor()">
         <div id="navBar" class="noselect">
-            <ul id="navList">
-                <li><a href="index.html" id="navbarWebsiteText">moonlight1211</a></li>
-                <li><a href="accounts.html">accounts</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(o)" class="dropbtn active">articles</a>
-                    <div class="dropdown-content">
-                        <a href="pets.html" class="active">pets</a>
-                    </div>
-                </li>
-                <li id="navHeaderText" onclick="randomColor()" class="noselect"></h1>
-            </ul>
+            <div id="navBar" class="noselect">
+                <ul id="navList">
+                    <li><a href="../index.html" id="navbarWebsiteText">moonlight1211</a></li>
+                    <li><a href="../accounts.html">accounts</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(o)" class="dropbtn active">articles</a>
+                        <div class="dropdown-content">
+                            <a href="../articles/pets.html" class="active">pets</a>
+                        </div>
+                    </li>
+                    <li><a href="../siteinfo.html">about</a></li>
+                    <li id="navHeaderText" onclick="randomColor()" class="noselect"></h1>
+                </ul>
+            </div>
         </div>
         <div class="bodyText">
             <h1>pets</h1>
