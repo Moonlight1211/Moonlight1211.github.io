@@ -14,7 +14,27 @@
 .bodyText h1{
     margin-top:60px;
 }
-
+.tab { 
+    margin-left: 40px; 
+}
+#politicalPositionsIdeologyText {
+    font-style:italic;
+}
+.articleBodyText {
+    font-family:Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    margin-left:20px;
+}
+.articleBodyText h1{
+    margin-top:60px;
+}
+#darkModeText {
+    position: fixed;
+    top: 55px;
+    right: 10px;
+    font-size: smaller;
+}
 
 /* navigation bar styling */
 .active {
