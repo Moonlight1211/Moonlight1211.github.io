@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>moonlight1211</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+        <script> 
+            //if you read the code to this site you are crazy and I hate you
+            const funnyText = [
+                "welcome to my website",
+                "welcome to my stupid shit ass website",
+                "welcome to my fucking dumbass shit website",
+                "welcome to my dumbfuck shit stupidass website",
+                "welcome to my shitty stupid dumbfuck website",
+                "welcome to my website. it is shit and fucking stupid",
+                "welcome to my website (fuck)",
+                "welcome my to website",
+                "welcome to the fucking website",
+                "welcome to my website of shit",
+                "welcome to shit",
+                "fuck",
+                "welcome to my very cool and awesome website",
+                "welsite to my webcome",
+                "welcome to my website for the insane",
+                "welcome to my website (i am crazy)",
+                "moonlight1211",
+            ]
+            function randomText(){
+                document.getElementById("navHeaderText").textContent = funnyText[Math.floor(Math.random() * (17))]
+            }
+            function randomColor(){
+                document.getElementById("navHeaderText").style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
+            }
+        </script>
+    </head>
+    <body onload="randomText(); randomColor()">
+        <div id="navBar" class="noselect">
+            <ul id="navList">
+                <li class="noselect"><a href="index.html" id="navbarWebsiteText">moonlight1211</a></li>
+                <li><a href="accounts.html">accounts</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">articles</a>
+                    <div class="dropdown-content">
+                        <a href="./articles/pets.html">pets</a>
+                        <a href="./articles/politicalpositions.html">political positions</a>
+                    </div>
+                </li>
+                <li><a href="siteinfo.html">about</a></li>
+                <li id="navHeaderText" onclick="randomColor()" class="noselect"></h1>
+            </ul>
+        </div>
+        <div class="noselect bodyText"> 
+            <h1>welcome to my website</h1>
+            <p>
+                THIS WEBSITE IS UNDER CONSTRUCTION. NOTHING YOU SEE IS PERMANENT. YOU CAN VIEW THE DEVELOPMENT PROCESS ON MY <a href="https://github.com/Moonlight1211/Moonlight1211.github.io" target="_blank">GITHUB</a>
+                <br>
+                <br>
+                this website is where any information you could possibly need about me (moonlight1211) can be accessed. 
+                <br>
+                <br>
+                I will update this website as often as possible with any new pertaining information.
+                <br>
+                do not expect anything too personally revealing. you wont find pictures of my face, or any identifying information.
+                <br>
+                <br>
+                if you have any questions that remain unanswered despite your use of this site, my <a href="./accounts.html#genSocMediaList">discord</a> is the best way to contact me.
+                <br>
+                organized information can be found in the pages in the navigation bar at the top.<br>thanks for visiting.
+            </p>
+        </div>
+        <br>
+    </body>
+</html>
