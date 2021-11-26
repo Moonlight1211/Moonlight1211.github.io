@@ -9,7 +9,76 @@
 body {
     background-color: rgb(36, 36, 36);
 }
-p {
+.tile {
+    border-radius: 25px;
+    height: 700px;
+    width: 500px;
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -250px;
+    margin-top: -350px;
+}
+.tile h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.tile p {
+    transition-duration: 0.3s;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    margin: 0;
+}
+.tile p:hover, h2:hover {
+    color: rgb(175, 175, 175);
+}
+.tile ul {
+    list-style-type:none; 
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.tile ul li {
+    display: block;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.tile ul li a{
+    transition-duration: 0.3s;
+    padding: 10px;
+    background-color: rgb(173, 173, 173);
+    border-radius: 17px;
+    text-decoration: none;
+    color: white;
+}
+.tile ul li a:visited{
+    text-decoration: none;
+}
+.tile ul li a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: rgb(173, 173, 173);
+}
+.tile ul li a:active{
+    text-decoration: none;
+}
+#discordIdText {
+    padding-top: 0;
+    animation-duration: 0ms;
+
+}
+#discordIdText:hover {
+    color: white;
 }
