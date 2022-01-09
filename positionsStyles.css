@@ -1,0 +1,62 @@
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    background-color: rgb(36, 36, 36);
+}
+.tile {
+    border-radius: 25px;
+    height: 1500px;
+    width: 1000px;
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -500px;
+    margin-top: -350px;
+}
+.tile h2 {
+    transition-duration: 0.3s;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.tile h3 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.tile h4 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.tile p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    margin: 0;
+}
+.tile h2:hover {
+    color: rgb(175, 175, 175);
+}
+.tile a {
+    text-decoration: none;
+    display: table;
+}
