@@ -9,76 +9,84 @@
 body {
     background-color: rgb(36, 36, 36);
 }
+#homeHeader {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: left;
+}
+
 .tile {
-    border-radius: 25px;
-    height: 700px;
-    width: 500px;
-    background-color: rgb(100, 100, 100);
+    height: 80%;
+    width: 75%;
     position: absolute;
     left: 50%;
-    top: 50%; 
-    margin-left: -250px;
-    margin-top: -350px;
+    top: 30%; 
+    margin-left: -37.5%;
+    margin-top: -40%;
 }
-.tile h2 {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
+.tile #moonlightHeader{
+    transition-duration: 0.4s;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    font-family: 'Italianno';
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-top: 0;
 }
-.tile p {
-    transition-duration: 0.3s;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    margin: 0;
-}
-.tile p:hover, h2:hover {
-    color: rgb(175, 175, 175);
-}
-.tile ul {
-    list-style-type:none; 
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 20px;
+.tile h3 {
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
-.tile ul li {
-    display: block;
-    position: relative;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-.tile ul li a{
-    transition-duration: 0.3s;
-    padding: 10px;
-    background-color: rgb(173, 173, 173);
-    border-radius: 17px;
-    text-decoration: none;
+.tile p {
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-bottom: 30;
 }
-.tile ul li a:visited{
+.tile a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    color: white;
+    margin-bottom: 5px;
+    display: list-item;
+    text-align: center;
+    border-radius: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    border: 2px solid white;
+}
+.tile a:visited{
     text-decoration: none;
 }
-.tile ul li a:hover{
+.tile a:hover{
     text-decoration: none;
     background-color: white;
-    color: rgb(173, 173, 173);
+    color: rgb(36, 36, 36);
 }
-.tile ul li a:active{
+.tile a:active{
     text-decoration: none;
 }
-#discordIdText {
-    padding-top: 0;
-    animation-duration: 0ms;
 
-}
-#discordIdText:hover {
-    color: white;
+@media only screen and (min-width: 600px) {
+    .tile {
+        height: 700px;
+        width: 500px;
+        left: 50%;
+        top: 50%; 
+        margin-left: -250px;
+        margin-top: -350px;
+    }
+    .tile a {
+        font-size: 16px;
+    }
+    .tile p {
+        font-size: 14px;
+    }
+    .tile h2 {
+        font-size: x-large;
+    }
 }
