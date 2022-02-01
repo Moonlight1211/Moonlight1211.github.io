@@ -15,8 +15,12 @@ body {
     margin: 0;
     border: 0;
     text-align: left;
+    text-decoration: none;
 }
-
+#twitchList {
+    list-style: none;
+    padding-left: 0;
+}
 .tile {
     height: 80%;
     width: 75%;
@@ -70,6 +74,22 @@ body {
 .tile a:active{
     text-decoration: none;
 }
+#twitchList li a{
+    text-align: left;
+    display: table;
+    padding: 5px;
+    border-radius: 10px;
+}
+#twitchList p {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+
+
+
+
+
 
 @media only screen and (min-width: 600px) {
     .tile {
@@ -82,11 +102,30 @@ body {
     }
     .tile a {
         font-size: 16px;
+        text-align:center;
+        padding: 0px;
+        border: none;
+        border-radius: 0px;
+        text-decoration: underline;
+        font-size: 20px;
     }
     .tile p {
         font-size: 14px;
     }
     .tile h2 {
         font-size: x-large;
+        text-decoration: none;
+    }
+    #twitchList li a{
+        text-align: left;
+        padding: 0px;
+        display: inline;
+        border: none;
+        border-radius: 0px;
+        text-decoration: underline;
+        font-size: 17px;
+    }
+    #twitchList p {
+        padding-left: 20px;
     }
 }
