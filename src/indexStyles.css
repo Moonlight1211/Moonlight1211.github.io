@@ -30,10 +30,15 @@ body {
     margin-left: -37.5%;
     margin-top: -40%;
 }
+@font-face {
+    font-family: Italianno;
+    src: url(./fonts/Italianno-Regular.ttf);
+}
+
 .tile #moonlightHeader{
     transition-duration: 0.4s;
     color: white;
-    font-family: 'Italianno';
+    font-family: Italianno;
     font-size: 40px;
     margin-bottom: 15px;
     margin-top: 0;
