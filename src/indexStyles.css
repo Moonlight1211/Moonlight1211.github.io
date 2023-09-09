@@ -1,3 +1,5 @@
+/* css is awful to make lmfao sorry for this mess */
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -6,30 +8,20 @@
     -ms-user-select: none;
     user-select: none;
 }
+
 body {
     background-color: rgb(0, 0, 0);
 }
-#homeHeader {
-    display: inline;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    text-align: left;
-    text-decoration: none;
-}
-#twitchList {
-    list-style: none;
-    padding-left: 0;
-}
+
 .tile {
-    height: 80%;
+    height: 60%;
     width: 75%;
     position: absolute;
     left: 50%;
     top: 30%; 
     margin-left: -37.5%;
-    margin-top: -40%;
 }
+
 @font-face {
     font-family: Italianno;
     src: url(./fonts/Italianno-Regular.ttf);
@@ -43,49 +35,48 @@ body {
     margin-bottom: 15px;
     margin-top: 0;
 }
-.tile h3 {
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-.tile p {
+
+body ul {
+    padding-left: 0;
+    list-style-type: none;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
 }
-.tile a{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 15px;
-    color: white;
+
+.tile h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.tile li {
+    font-size: 20px;
+    vertical-align: middle;
+    text-align: center;
     margin-bottom: 5px;
+}
+
+.tile a {
+    color: white;
     display: list-item;
     text-align: center;
-    border-radius: 15px;
     list-style-type: none;
     text-decoration: none;
-    border: 2px solid white;
 }
-.tile a:visited{
+
+.tile a:visited {
     text-decoration: none;
 }
-.tile a:hover{
-    text-decoration: none;
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
-.tile a:active{
+
+.tile a:active {
     text-decoration: none;
 }
-#twitchList li a{
-    text-align: left;
-    display: table;
-    padding: 5px;
-    border-radius: 10px;
-}
-#otherLinksButton {
-    display: none;
+
+.tile img {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -97,69 +88,24 @@ body {
         margin-left: -250px;
         margin-top: -350px;
     }
-    .tile a {
-        font-size: 16px;
-        text-align:right;
-        margin: 0;
+
+    .tile li:hover {
+        text-decoration: underline;
+    }
+
+    .tile a, .tile li {
+        margin-bottom: 0;
+        text-align: right;
         padding: 0 0 5px 0;
         border: none;
         border-radius: 0px;
         text-decoration: none;
         font-size: 20px;
+        vertical-align: middle;
     }
-    .tile p {
-        font-size: 14px;
-    }
+
     .tile h2 {
         font-size: x-large;
         text-decoration: none;
-    }
-    #twitchList li a{
-        text-align: left;
-        padding: 0px;
-        display: inline;
-        border: none;
-        border-radius: 0px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    #twitchList p {
-        font-size: 17px;
-        display: inline;
-    }
-    #otherLinksButton {
-        display: block;
-        background-color:rgba(0, 0, 0, 0);
-        color: white;
-        font-size: 16px;
-        text-align:left;
-        margin: 0;
-        padding: 0 0 5px 0;
-        border: none;
-        border-radius: 0px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    #otherLinksButton:hover{
-        text-decoration: none;
-        background-color: white;
-        color: rgb(0, 0, 0);
-    }
-    .tile .otherLinksDiv a {
-        background-color:rgba(0, 0, 0, 0);
-        color: white;
-        font-size: 16px;
-        text-align:left;
-        margin: 0;
-        padding: 0 0 5px 0;
-        border: none;
-        border-radius: 0px;
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .tile .otherLinksDiv a:hover{
-        text-decoration: none;
-        background-color: white;
-        color: rgb(0, 0, 0);
     }
 }
