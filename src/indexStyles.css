@@ -41,7 +41,6 @@ body ul {
     list-style-type: none;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
 }
 
 .tile h3 {
@@ -51,7 +50,7 @@ body ul {
 }
 
 .tile li {
-    font-size: 20px;
+    font-size: 18px;
     vertical-align: middle;
     text-align: center;
     margin-bottom: 5px;
