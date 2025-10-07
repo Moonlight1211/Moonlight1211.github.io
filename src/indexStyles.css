@@ -1,14 +1,4 @@
-/* css is awful to make lmfao sorry for this mess */
-
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
+/* I hate CSS */
 body {
     background-color: rgb(0, 0, 0);
 }
@@ -18,7 +8,7 @@ body {
     width: 75%;
     position: absolute;
     left: 50%;
-    top: 30%; 
+    top: 10%; 
     margin-left: -37.5%;
 }
 
@@ -27,12 +17,12 @@ body {
     src: url(./fonts/Italianno-Regular.ttf);
 }
 
-.tile #moonlightHeader{
+.tile #moonlightHeader {
     transition-duration: 0.4s;
     color: white;
     font-family: Italianno;
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     margin-top: 0;
 }
 
@@ -54,6 +44,7 @@ body ul {
     vertical-align: middle;
     text-align: center;
     margin-bottom: 5px;
+    padding: 10px;
 }
 
 .tile a {
@@ -79,6 +70,19 @@ body ul {
 }
 
 @media only screen and (min-width: 600px) {
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .tile a:hover {
+        text-decoration: underline;
+    }
+
     .tile {
         height: 700px;
         width: 500px;
@@ -86,10 +90,6 @@ body ul {
         top: 50%; 
         margin-left: -250px;
         margin-top: -350px;
-    }
-
-    .tile li:hover {
-        text-decoration: underline;
     }
 
     .tile a, .tile li {
